@@ -35,6 +35,18 @@ namespace Negocio
 
             return listaMenu;
         }
+
+        public static List<Entidades.Menu> ListarPorProducto(int IdProducto)
+        {
+            List<Entidades.Menu> listaMenu = new List<Entidades.Menu>();
+
+            foreach (DataRow item in Datos.Menu.ListarPorProducto(IdProducto).Rows)
+            {
+                listaMenu.Add(ArmarDatos(item));
+            }
+
+            return listaMenu;
+        }
         #endregion
 
         #region metodos privados
