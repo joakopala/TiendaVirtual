@@ -269,6 +269,9 @@
     <Content Include="js\theme.js" />
     <Content Include="Scripts\Generales\Funciones.js" />
     <Content Include="Scripts\Home\Index.js" />
+    <Content Include="Scripts\Productos\ListProductos.js" />
+    <Content Include="Scripts\Productos\Editar.js" />
+    <Content Include="Scripts\Productos\Index.js" />
     <Content Include="Scripts\Usuarios\Administracion.js" />
     <Content Include="Scripts\Usuarios\Editar.js" />
     <Content Include="Scripts\Usuarios\Ingresar.js" />
@@ -316,7 +319,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="img\blog\latest-post\" />
-    <Folder Include="Views\Productos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css.map" />
@@ -363,6 +365,9 @@
     <Content Include="Views\Usuarios\Ingresar.cshtml" />
     <Content Include="Views\Usuarios\Administracion.cshtml" />
     <Content Include="Views\Usuarios\Editar.cshtml" />
+    <Content Include="Views\Productos\Index.cshtml" />
+    <Content Include="Views\Productos\ListProductos.cshtml" />
+    <Content Include="Views\Productos\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">

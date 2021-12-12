@@ -35,10 +35,11 @@ namespace Datos
                     cmd.Parameters.Add(new SqlParameter("@Nombre", Producto.Nombre));
                     cmd.Parameters.Add(new SqlParameter("@Marca", Producto.Marca));
                     cmd.Parameters.Add(new SqlParameter("@Modelo", Producto.Modelo));
-                    cmd.Parameters.Add(new SqlParameter("@Stock", Producto.Stock));
-                    cmd.Parameters.Add(new SqlParameter("@PrecioUnitario", Producto.PrecioUnitario));
+                    cmd.Parameters.Add(new SqlParameter("@Stock", (int)Producto.Stock));
+                    cmd.Parameters.Add(new SqlParameter("@PrecioUnitario", (int)Producto.PrecioUnitario));
                     cmd.Parameters.Add(new SqlParameter("@Descripcion", Producto.Descripcion));
                     cmd.Parameters.Add(new SqlParameter("@IdPermiso", (int)Producto.TipoPermiso));
+                    cmd.Parameters.Add(new SqlParameter("@Activo", (int)Producto.Estado));
 
 
                     // Ejecuto el comando y asigo el valor al DataReader
@@ -80,8 +81,8 @@ namespace Datos
                     cmd.Parameters.Add(new SqlParameter("@Nombre", Producto.Nombre));
                     cmd.Parameters.Add(new SqlParameter("@Marca", Producto.Marca));
                     cmd.Parameters.Add(new SqlParameter("@Modelo", Producto.Modelo));
-                    cmd.Parameters.Add(new SqlParameter("@Stock", Producto.Stock));
-                    cmd.Parameters.Add(new SqlParameter("@PrecioUnitario", Producto.PrecioUnitario));
+                    cmd.Parameters.Add(new SqlParameter("@Stock", (int)Producto.Stock));
+                    cmd.Parameters.Add(new SqlParameter("@PrecioUnitario", (int)Producto.PrecioUnitario));
                     cmd.Parameters.Add(new SqlParameter("@Descripcion", Producto.Descripcion));
                     cmd.Parameters.Add(new SqlParameter("@IdPermiso", (int)Producto.TipoPermiso));
 
