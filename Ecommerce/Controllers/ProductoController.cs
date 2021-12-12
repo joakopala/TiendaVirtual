@@ -36,7 +36,7 @@ namespace Ecommerce.Controllers
 
                 Negocio.Producto.Eliminar(id,id);
 
-                return RedirectToAction("Administracion","Productos");
+                return RedirectToAction("ListProductos","Productos");
             }
 
             catch (Exception ex)
@@ -62,17 +62,17 @@ namespace Ecommerce.Controllers
         //    return RedirectToAction("Index","Home");
         //}
 
-        public ActionResult Administracion()
+        public ActionResult ListProductos()
         {
-           Entidades.Producto Producto = (Entidades.Producto)Session["Producto"];
+           //Entidades.Producto Producto = (Entidades.Producto)Session["Producto"];
 
-            if (Producto != null && Producto.TipoPermiso== Entidades.Enumerables.Producto.TipoPermisos.Admin)
+            //if (Producto != null && Producto.TipoPermiso== Entidades.Enumerables.Producto.TipoPermisos.Admin)
 
                 return View(Negocio.Producto.Listar());
 
-            else
+            //else
 
-                return RedirectToAction("Error", "Home");
+            //    return RedirectToAction("Error", "Home");
         }
 
         [HttpPost]

@@ -1,4 +1,4 @@
-﻿$("#btnEditar").click(function () {
+﻿$("#btnEditarP").click(function () {
 
 
     $.ajax({

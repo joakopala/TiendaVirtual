@@ -85,7 +85,7 @@ namespace Datos
                     cn.Open();
 
                     // 1. Creo el objeto SqlCommand y le asigno el nombre del Procedimiento Almacenado
-                    SqlCommand cmd = new SqlCommand("SP_Menu_ListarPorUsuario", cn);
+                    SqlCommand cmd = new SqlCommand("SP_Menu_ListarPorProducto", cn);
                     cmd.Parameters.Add(new SqlParameter("@IdProducto", IdProducto));
 
                     // 2. Especifico el tipo de Comando
