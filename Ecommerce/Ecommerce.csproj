@@ -270,7 +270,7 @@
     <Content Include="Scripts\Generales\Funciones.js" />
     <Content Include="Scripts\Home\Index.js" />
     <Content Include="Scripts\Productos\ListProductos.js" />
-    <Content Include="Scripts\Productos\Editar.js" />
+    <Content Include="Scripts\Productos\EditarP.js" />
     <Content Include="Scripts\Productos\Index.js" />
     <Content Include="Scripts\Usuarios\Administracion.js" />
     <Content Include="Scripts\Usuarios\Editar.js" />
@@ -367,7 +367,7 @@
     <Content Include="Views\Usuarios\Editar.cshtml" />
     <Content Include="Views\Productos\Index.cshtml" />
     <Content Include="Views\Productos\ListProductos.cshtml" />
-    <Content Include="Views\Productos\Editar.cshtml" />
+    <Content Include="Views\Productos\EditarP.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">

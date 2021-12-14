@@ -225,6 +225,7 @@ namespace Negocio
             Producto.IdProducto = Convert.ToInt32(fila["IdProducto"]);
             Producto.Descripcion = fila["Descripcion"].ToString();
             Producto.ListaMenu = Menu.ListarPorProducto(Producto.IdProducto.Value);
+            Producto.Estado = (Entidades.Enumerables.Producto.Estado)Convert.ToInt32(fila["IdEstado"]);
 
             return Producto;
         }

@@ -1,17 +1,17 @@
-﻿$("#btnEditar").click(function () {
+﻿$("#btnUsuariosEditar").click(function () {
 
 
     $.ajax({
-        url: '/Productos/Guardar',
-        data: $('#frmProductoEditar').serialize(),
+        url: '/Usuarios/Guardar',
+        data: $('#frmUsuarioEditar').serialize(),
         type: 'POST',
-        dataType: 'json',
+        dataType: 'json', 
         success: function (data) {
             var obj = data;
-            debugger;
+/*            debugger;*/
             if (obj.EsCorrecto) {
 
-                $(location).attr('href', '/Productos/ListProductos');
+                $(location).attr('href', '/Usuarios/Administracion');
             }
             else {
 
