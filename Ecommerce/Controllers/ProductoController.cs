@@ -15,7 +15,7 @@ namespace Ecommerce.Controllers
         }
 
         [HttpGet]
-        public ActionResult Editar(int? Id)
+        public ActionResult EditarP(int? Id)
 
         {
             Entidades.Producto Producto = new Entidades.Producto();
@@ -81,7 +81,7 @@ namespace Ecommerce.Controllers
             try
             {
                 Producto.TipoPermiso = Entidades.Enumerables.Producto.TipoPermisos.Comprador;
-
+                Producto.Estado = Entidades.Enumerables.Producto.Estado.Activo;
                  Negocio.Producto.Grabar(Producto);
 
                 Entidades.Resultado resultado = new Entidades.Resultado();
