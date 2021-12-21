@@ -24,7 +24,7 @@
         dataType: 'json',
         success: function (data) {
             var obj = data;
-            debugger;
+            
             if (obj.EsCorrecto) {
 
                 /* $(location).attr('href', '/Home/Index')*/

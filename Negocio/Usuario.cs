@@ -79,6 +79,8 @@ namespace Negocio
         /// <param name="email">Email</param>
         /// <param name="clave">Clave sin Encriptar</param>
         /// <returns></returns>
+        
+        ///Login
         public static Entidades.Usuario Obtener(string email, string clave)
         {
             DataTable dt = Datos.Usuario.Obtener(email,Negocio.Utilidades.Seguridad.Encriptar(clave));
@@ -111,6 +113,7 @@ namespace Negocio
 
         }
 
+        /// Trae un usuario en especifico (x id)
         public static Entidades.Usuario Obtener(int id)
         {
             DataTable dt = Datos.Usuario.Obtener(id);
